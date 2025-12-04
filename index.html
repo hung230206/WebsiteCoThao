@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Giáo Viên - Nguyễn Văn An</title>
+    <!-- Dùng Tailwind CSS để căn chỉnh nhanh -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; } /* Hiệu ứng trượt mượt mà */
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans max-w-4xl mx-auto border-x border-gray-100 min-h-screen flex flex-col">
+
+    <!-- 1. Header & Menu -->
+    <header class="bg-blue-700 text-white p-5 sticky top-0 z-50 shadow-sm">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <h1 class="text-xl font-bold">Cô Nguyễn Thị Thu Thảo</h1>
+            <nav>
+                <ul class="flex space-x-6 text-sm font-medium">
+                    <li><a href="#home" class="hover:text-yellow-300">Trang chủ</a></li>
+                    <li><a href="#lectures" class="hover:text-yellow-300">Bài giảng</a></li>
+                    <li><a href="#materials" class="hover:text-yellow-300">Tư liệu</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-300">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Nội dung chính -->
+    <main class="flex-grow p-6 space-y-12">
+
+        <!-- Phần: Trang chủ & Giới thiệu -->
+        <section id="home" class="pt-4">
+            <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+                <!-- Ảnh đại diện -->
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar" class="w-24 h-24 rounded-full border-4 border-white shadow-sm">
+                <div>
+                    <h2 class="text-2xl font-bold text-blue-800">Xin chào, tôi là Nguyễn Thị Thu Thảo</h2>
+                    <p class="text-gray-600 mt-2">
+                        Giáo viên bộ môn <strong>ABC</strong> với 10 năm kinh nghiệm. <br>
+                        Chào mừng các em đến với trang web học tập của cô.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bài viết chào mừng -->
+            <div class="mt-8">
+                <h3 class="text-xl font-bold border-b-2 border-blue-500 inline-block mb-4">🔔 Thông báo mới</h3>
+                <article class="prose max-w-none text-gray-700">
+                    <p class="font-bold">Chào mừng năm học mới 2025 - 2026!</p>
+                    <p>Cô chúc các em một năm học thật nhiều niềm vui và đạt kết quả cao. Trên trang web này, cô sẽ cập nhật bài giảng hàng tuần.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <!-- Phần: Bài giảng -->
+        <section id="lectures" class="pt-4">
+            <h3 class="text-xl font-bold mb-6 text-blue-800">📚 Bài giảng mới nhất</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- Bài 1 -->
+                <div class="border rounded p-4 hover:bg-gray-50 transition">
+                    <h4 class="font-bold">🎥 Chuyên đề: Hàm số (Phần 1)</h4>
+                    <p class="text-sm text-gray-500 mt-1">Đăng ngày: 10/09/2025</p>
+                    <a href="#" class="text-blue-600 text-sm mt-2 inline-block hover:underline">Xem video &rarr;</a>
+                </div>
+                <!-- Bài 2 -->
+                <div class="border rounded p-4 hover:bg-gray-50 transition">
+                    <h4 class="font-bold">📑 Lý thuyết: Hình học không gian</h4>
+                    <p class="text-sm text-gray-500 mt-1">Đăng ngày: 12/09/2025</p>
+                    <a href="#" class="text-blue-600 text-sm mt-2 inline-block hover:underline">Xem slide &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <!-- Phần: Tư liệu -->
+        <section id="materials" class="pt-4">
+            <h3 class="text-xl font-bold mb-6 text-blue-800">📂 Kho tài liệu</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 bg-gray-50 p-6 rounded">
+                <li><a href="#" class="text-blue-700 hover:underline">Đề cương ôn tập Toán 12 - Học kỳ 1.pdf</a></li>
+                <li><a href="#" class="text-blue-700 hover:underline">Tổng hợp công thức Logarit.docx</a></li>
+                <li><a href="#" class="text-blue-700 hover:underline">50 bài tập trắc nghiệm Hàm số (Có đáp án).pdf</a></li>
+            </ul>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <!-- Phần: Liên hệ -->
+        <section id="contact" class="pt-4">
+            <h3 class="text-xl font-bold mb-6 text-blue-800">📞 Liên hệ</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-2"><strong>Email:</strong> thaonguyen20072006@gmail.com</p>
+                    <p class="mb-2"><strong>SĐT:</strong> 0982147035</p>
+                    <p class="mb-2"><strong>Trường:</strong> Trường Đại học Sư phạm - ĐHĐN</p>
+                </div>
+                <!-- Form đơn giản -->
+                <form class="space-y-3">
+                    <input type="text" placeholder="Tên của em..." class="w-full border p-2 rounded">
+                    <textarea placeholder="Nội dung nhắn gửi..." class="w-full border p-2 rounded" rows="3"></textarea>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full md:w-auto">Gửi tin nhắn</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 3. Footer -->
+    <footer class="bg-gray-100 text-center p-4 text-sm text-gray-500 border-t mt-auto">
+        &copy; 2025 Website của Cô Thảo
+    </footer>
+
+</body>
+</html>
